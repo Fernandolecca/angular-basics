@@ -1,0 +1,45 @@
+<h1>Dragon ball Z</h1>
+<hr>
+
+<div class="row">
+    <div class="col">
+        <app-characters>
+
+        </app-characters>
+        <!-- <h3>Characters</h3>
+        <hr>
+        <ul>
+           <li *ngFor="let character of characters; let i=index"> 
+                {{ character.name }} - {{ character.power | number }}
+           </li>
+        </ul> -->
+    </div>
+
+    <div class="col">
+        <app-add 
+            [nuevo]="nuevo"
+            >
+            <!-- (onNewCharacter)="addNewCharacter( $event )" -->
+
+        </app-add>
+        <!-- <h3>Add <small>{{ nuevo.name }}</small></h3>
+        <hr>
+        <form (ngSubmit)="add()">
+            <input 
+                type="text" 
+                placeholder="Name"
+                name="name"
+                [(ngModel)]="nuevo.name"
+            > -->
+                <!-- [value]="nuevo.name"
+                (input)="changeName( $event )" -->
+            <!-- <input 
+                type="number" 
+                placeholder="power"
+                name="power"
+                [(ngModel)]="nuevo.power"
+            >
+            <button type="submit">Add</button>
+        </form> -->
+    </div>
+</div>
